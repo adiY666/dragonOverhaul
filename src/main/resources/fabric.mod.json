@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "dragon-overhaul",
+  "version": "${version}",
+  "name": "dragon-overhaul",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/dragon-overhaul/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.ganehtheking66.dragonOverhaul.client.DragonOverhaulDataGenerator"
+    ],
+    "client": [
+      "com.ganehtheking66.dragonOverhaul.client.DragonOverhaulClient"
+    ],
+    "main": [
+      "com.ganehtheking66.dragonOverhaul.DragonOverhaul"
+    ]
+  },
+  "mixins": [
+    "dragon-overhaul.mixins.json",
+    {
+      "config": "dragon-overhaul.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

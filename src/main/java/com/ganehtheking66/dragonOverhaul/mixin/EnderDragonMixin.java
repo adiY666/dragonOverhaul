@@ -1,6 +1,8 @@
 package com.ganehtheking66.dragonOverhaul.mixin;
 
 import com.ganehtheking66.dragonOverhaul.attacks.ToxicRoostAttack;
+import com.ganehtheking66.dragonOverhaul.commands.ForwardFlightCommand;
+import com.ganehtheking66.dragonOverhaul.commands.GoToCommand;
 import net.minecraft.entity.boss.dragon.EnderDragonEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,5 +17,7 @@ public class EnderDragonMixin {
         EnderDragonEntity thisDragon = (EnderDragonEntity) (Object) this;
 
         ToxicRoostAttack.execute(thisDragon);
+
+        GoToCommand.execute(thisDragon);
     }
 }

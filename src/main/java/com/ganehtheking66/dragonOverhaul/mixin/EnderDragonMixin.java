@@ -19,5 +19,7 @@ public class EnderDragonMixin {
         ToxicRoostAttack.execute(thisDragon);
 
         GoToCommand.execute(thisDragon);
+
+        ForwardFlightCommand.execute(thisDragon);
     }
 }

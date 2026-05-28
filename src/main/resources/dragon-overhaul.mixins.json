@@ -4,6 +4,7 @@
   "package": "com.ganehtheking66.dragonOverhaul.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "EnderDragonMixin"
   ],
   "injectors": {
     "defaultRequire": 1
